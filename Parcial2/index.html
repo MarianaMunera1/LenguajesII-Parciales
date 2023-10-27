@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modalver.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>Floristeria</title>
+
+    <script src="main.js" type="module"></script>
+  </head>
+  <body>
+    <div class="floating-button">
+      <a href="https://wa.me/1234567890" class="link" target="_blank">
+        <button><img src="./imagenes/whatsapp.png" alt="" id="wpp" /></button>
+      </a>
+    </div>
+    <header class="header" id="inicio">
+      <div class="columna">
+        <img
+          src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/058/193/themes/common/logo-1506860665-1647464429-4152113de076e125a6d1be6860747aab1647464429.png?0"
+          alt=""
+          id="logop"
+        />
+        <h1 id="tit">Floristeria</h1>
+      </div>
+      <div class="columna">
+        <nav class="navbar">
+          <button id="ver-mas" onclick="mostrar()">Ver más</button>
+
+          <div id="modal" style="display: none;">
+            ¿Está seguro que desea ver las demás secciones?
+            <button id="aceptar">Aceptar</button>
+            <button id="cancelar">Cancelar</button>  
+          </div>
+
+          <a href="#home" class="link" target="_self">Home </a>
+          <a href="#servicios" class="link" target="_self" style="display: none;">Servicios </a>
+          <a href="#colaboradores" class="link" target="_self" style="display: none;">Colaboradores</a>
+          <a href="#final" class="link" target="_self">
+            <img src="./imagenes/FlechaDown.png" alt="" id="flecha1" />
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home">
+      <div class="columna" style="width: 200px; padding-left: 100px;">
+        <h2>Inspiration by Mariana</h2>
+        <p>
+          "Inspiration by Mariana" es una exquisita floristería que destaca como
+          un verdadero paraíso de la belleza floral y la creatividad en el mundo
+          de las flores. Fundada por Mariana, una apasionada amante de la
+          naturaleza y una talentosa florista con una visión artística única,
+          esta floristería se ha convertido en un destino de referencia para
+          todos los amantes de las flores en la comunidad.
+        </p>
+        <p>
+          Ubicada en un encantador local en el corazón de la ciudad de Medellín, Inspiration
+          by Mariana se destaca por su ambiente acogedor y encantador. La tienda
+          está diseñada con un toque de elegancia y un estilo rústico que crea
+          un ambiente relajante y atractivo para los visitantes. La decoración
+          interior y la disposición de las flores y arreglos florales son un
+          reflejo de la pasión y el amor por las flores que Mariana y su equipo
+          ponen en cada creación.
+        </p>
+      </div>
+      <div class="columna">
+        <img
+          id="imgMarg"
+          src="https://www.eljardindevenus.com/imagenes/jardin/cosas-curiosas-sobre-las-margaritas.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section id="servicios" style="display: none;">
+      <h2 id="titServicios" style="text-align: center">Nuestras Flores</h2>
+      <div class="fila" id="contServicios"></div>
+    </section>
+
+    <section id="colaboradores" style="display: none;">
+      <h2 id="titColaboradores">Colaboradores del Proyecto</h2>
+      <div class="fila" id="contColaboradores"></div>
+    </section>
+
+    <footer class="footer" id="final">
+      <div>
+        <p>https://icon-icons.com/es/</p>
+        <p><b>Hecho por: </b>Mariana Munera</p>
+      </div>
+
+      <div>
+        <a href="#inicio" class="link" target="_self">
+          <img src="./imagenes/FlechaUp.png" alt="" id="flecha2" />
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
